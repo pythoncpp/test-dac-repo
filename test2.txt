@@ -1,4 +1,0 @@
-this is file2 created by main branch.
-this is file2 created by b2 branch.
-this is file2 created by b2 branch.
-this is file2 created by b2 branch.
