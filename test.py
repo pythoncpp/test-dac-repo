@@ -7,7 +7,7 @@ class Person:
         self.__age = age
 
     def can_vote(self):
-        return self.__age > 18
+        return self.__age >= 18
 
 class MyTests(unittest.TestCase):
     def setUp(self):

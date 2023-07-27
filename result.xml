@@ -1,1 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="0.008" timestamp="2023-07-26T23:41:50.139299" hostname="master"><testcase classname="test.MyTests" name="test_can_vote" time="0.000" /></testsuite></testsuites>
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.013" timestamp="2023-07-27T01:44:28.288574" hostname="master"><testcase classname="test.MyTests" name="test_can_vote" time="0.000"><failure message="assert False == True&#10; +  where False = &lt;bound method Person.can_vote of &lt;test.Person object at 0xffff88f2ebc0&gt;&gt;()&#10; +    where &lt;bound method Person.can_vote of &lt;test.Person object at 0xffff88f2ebc0&gt;&gt; = &lt;test.Person object at 0xffff88f2ebc0&gt;.can_vote&#10; +      where &lt;test.Person object at 0xffff88f2ebc0&gt; = &lt;test.MyTests testMethod=test_can_vote&gt;.person">self = &lt;test.MyTests testMethod=test_can_vote&gt;
+
+    def test_can_vote(self):
+&gt;       assert self.person.can_vote() == True
+E       assert False == True
+E        +  where False = &lt;bound method Person.can_vote of &lt;test.Person object at 0xffff88f2ebc0&gt;&gt;()
+E        +    where &lt;bound method Person.can_vote of &lt;test.Person object at 0xffff88f2ebc0&gt;&gt; = &lt;test.Person object at 0xffff88f2ebc0&gt;.can_vote
+E        +      where &lt;test.Person object at 0xffff88f2ebc0&gt; = &lt;test.MyTests testMethod=test_can_vote&gt;.person
+
+test.py:17: AssertionError</failure></testcase></testsuite></testsuites>
